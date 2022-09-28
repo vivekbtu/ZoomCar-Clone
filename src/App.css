@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+/* HOME NAVBAR CSS  */
+
+.HNavbar{
+  background-color: black;
+  
+}
+
+.HNavbar.colorChange{
+  background-color: black;
+  
+}
+.HNavbarHover:hover{
+
+  color: #fa5d00;
+}
+
+/* CHANGE NAVBAR COLOR CSS */
+
+.Navbar{
+  background-color: transparent;
+  
+}
+
+.Navbar.colorChange{
+  background-color: black;
+  
+}
+.NavbarHover:hover{
+
+  color: #fa5d00;
+}
+
+/* SHOW NOT SHOW NAVBAR CSS */
+
+.nav{
+  height:30px;
+  width: 100%;
+  position:fixed;
+  top:0;
+  /* transition-timing-function: ease-in;
+  transition:0.5s */
+}
+
+.nav__show{
+  background-color:black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ZmsImage{
+  width: 100%;
+  height: 100%;
+  /* margin-top: 60px; */
+}
+
+.HomeImage{
+  width: 100%;
+}
+
+/* .home,
+.services,
+.reports,
+.contact,
+.events,
+.support {
+  display: flex;
+  margin-left: 260px;
+  font-size: 2rem;
+} */
