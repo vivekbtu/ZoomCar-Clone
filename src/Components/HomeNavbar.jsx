@@ -25,8 +25,8 @@ const links2 = [
         title: "ZMS"
     },
     {
-        path:"/login",
-        title:"Login/SignUp"
+        path: "/login",
+        title: "Login/SignUp"
     }
 
 ]
@@ -61,41 +61,41 @@ function HomeNavbar() {
             {/* <Box className={show ? 'nav' : 'nav__show'} > */}
             {/* <Sidebar/> */}
             <Box className={colorChange ? 'HNavbar colorChange' : 'HNavbar '} width="100%" margin="auto" >
-            
-                <Box w="240%" height="60px" border="solid red 1px" >
-                <Flex justifyContent="space-around">
-                    <Flex w="75%" alignItems='center' marginTop="10px" border="solid red 1px" justifyContent="space-between" >
-                        <Box >
-                            <Img boxSize="100%" src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
-                        </Box>
 
-                        <Box>
-                            {links.map((link) => (
-                                <NavLink key={link.path} to={link.path}>
-                                    <Button color="red" className="NavbarHover" fontSize='1.1vw' borderRadius="20px">
-                                    <Img src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg" />
-                                        {link.title}
-                                    </Button>
-                                    
-                                </NavLink>
-                            ))}
-                        </Box>
-                    </Flex>
-                    <Box w="20%">
-                        <Flex w="100%" alignItems='center' gap={20} marginTop="15px" border="solid red 1px" justifyContent="space-around" >
-                        {links2.map((link) => (
+                <Box w="240%" height="60px" border="solid red 1px" >
+                    <Flex justifyContent="space-around">
+                        <Flex w="75%" alignItems='center' marginTop="10px" border="solid red 1px" justifyContent="space-between" >
+                            <Box >
+                                <Img boxSize="100%" src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
+                            </Box>
+
+                            <Box>
+                                {links.map((link) => (
+                                    <NavLink key={link.path} to={link.path}>
+                                        <Button color="red" className="NavbarHover" fontSize='1.1vw' borderRadius="20px">
+                                            <Img src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg" />
+                                            {link.title}
+                                        </Button>
+
+                                    </NavLink>
+                                ))}
+                            </Box>
+                        </Flex>
+                        <Box w="20%">
+                            <Flex w="100%" alignItems='center' gap={20} marginTop="15px" border="solid red 1px" justifyContent="space-around" >
+                                {links2.map((link) => (
                                     <NavLink key={link.path} to={link.path}>
                                         <Text color="white" className="NavbarHover" fontSize='1.3vw' fontWeight="700">{link.title}</Text>
                                     </NavLink>
                                 ))}
-                        </Flex>
-                    </Box>
+                            </Flex>
+                        </Box>
 
                     </Flex>
                 </Box>
 
-                
-                
+
+
             </Box>
             {/* </Box> */}
         </nav>
