@@ -2,12 +2,12 @@
 
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-// import Home from "./Home";
-// import Signin from "./Signin";
 // import Signup from "./Signup";
 // import Customers from "./Customers";
-import ZmsPage from "../Components/ZmsPage";
-import Home from "../Components/HomePage";
+import ZmsPage from "../Pages/ZmsPage";
+import Home from "../Pages/HomePage";
+import LoginSignup from "../Pages/LoginSignupPage";
+import LoginForm from "../Pages/LoginFormPage";
 
 function AllRoutes() {
   return (
@@ -16,9 +16,9 @@ function AllRoutes() {
         <Route path="/" element={<Home/>} />
         <Route path="/zoomcar-mobility-services" element={<ZmsPage />} />
         {/* <Route path="/contact" element={<ContactPage/>} /> */}
-        {/* <Route path="/customers" element={<Customers/>} />
-        <Route path="/signin" element={<Signin/>} />
-        <Route path="/signup" element={<Signup/>} /> */}
+        {/* <Route path="/customers" element={<Customers/>} /> */}
+        <Route path="/loginsignup" element={<LoginSignup/>} />
+        <Route path="/loginform" element={<LoginForm/>} />
       </Routes>
     </div>
   );

@@ -50,50 +50,50 @@ width: 100%;
 `;
 
 const Sidebar = () => {
-	const [sidebar, setSidebar] = useState(false);
+const [sidebar, setSidebar] = useState(false);
 
-	const showSidebar = () => setSidebar(!sidebar);
+const showSidebar = () => setSidebar(!sidebar);
 
-	return (
-		<>
-			<IconContext.Provider value={{ color: "#fff" }}>
-				<Nav>
-					<NavIcon to="#">
-						<FaIcons.FaBars onClick={showSidebar} />
-					</NavIcon>
+return (
+	<>
+	<IconContext.Provider value={{ color: "#fff" }}>
+		<Nav>
+		<NavIcon to="#">
+			<FaIcons.FaBars onClick={showSidebar} />
+		</NavIcon>
+   
+		{/* NEW NAVBAR CODE START */}
+        
+        <HomeNavbar/>
 
-					{/* NEW NAVBAR CODE START */}
+        {/* NEW NAVBAR CODE END */}
+    
+		</Nav>
+        </IconContext.Provider>
 
-					<HomeNavbar />
+        {/* INSIDE SIDE BAR CODE AND CSS */}
 
-					{/* NEW NAVBAR CODE END */}
+        <IconContext.Provider value={{ 
+            color: "black"
+             }}>   
+		<SidebarNav sidebar={sidebar} onClick={showSidebar}>
+		<SidebarWrap>
 
-				</Nav>
-			</IconContext.Provider>
+            {/* cross sign code */}
 
-			{/* INSIDE SIDE BAR CODE AND CSS */}
-
-			<IconContext.Provider value={{
-				color: "black"
-			}}>
-				<SidebarNav sidebar={sidebar} onClick={showSidebar}>
-					<SidebarWrap>
-
-						{/* cross sign code */}
-
-						{/* <NavIcon to="#">
+			{/* <NavIcon to="#">
 			<AiIcons.AiOutlineClose onClick={showSidebar} />
 			</NavIcon> */}
 
-						{SidebarData.map((item, index) => {
-							return <SubMenu item={item} key={index} />;
-						})}
-					</SidebarWrap>
-				</SidebarNav>
-			</IconContext.Provider>
-
-		</>
-	);
+			{SidebarData.map((item, index) => {
+			return <SubMenu item={item} key={index} />;
+			})}
+		</SidebarWrap>
+		</SidebarNav>
+    </IconContext.Provider>
+    
+	</>
+);
 };
 
 export default Sidebar;
