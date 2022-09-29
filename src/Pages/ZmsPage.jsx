@@ -1,5 +1,5 @@
 import { Box, Button, Container, Flex, FormControl, Grid, GridItem, HStack, Icon, Img, Input, SimpleGrid, Text, Textarea } from "@chakra-ui/react";
-import Navbar from "./ZmsNavbar";
+import Navbar from "../Components/ZmsNavbar";
 
 
 
@@ -12,7 +12,7 @@ function ZmsPage() {
         <>
             <Box margin="auto">
 
-
+                
 
 
                 <div className="ZmsImage"
@@ -28,7 +28,7 @@ function ZmsPage() {
                 >
                     {/* //////////////// NAVBAR SECTION ////////////////// */}
 
-                    <Navbar />
+                    <Navbar/>
                     {/* <Box width="100%" height="70px" margin="auto" border='solid red 1px' >
                         <Flex display="flex" justifyContent="space-around" alignItems="center" textAlign="center">
                             <Box >
@@ -42,17 +42,17 @@ function ZmsPage() {
 
                     {/* ///////////  BUTTON DIV //////////// */}
                     <Box padding="250px">
-                        <Box width="60%" margin="auto" border='solid red 1px' >
-                            <Text fontSize="2.5vw" fontWeight="500">Inspiring Profitable Mobility Solutions of Tomorrow</Text>
-                        </Box>
+                    <Box width="60%" margin="auto" border='solid red 1px' >
+                        <Text fontSize="2.5vw" fontWeight="500">Inspiring Profitable Mobility Solutions of Tomorrow</Text>
+                    </Box>
 
-                        <Box width="60%" margin="auto">
-                            <Text fontSize="1.2vw">Suite of Connected Technology Offerings and Connected Mobility Solutions for Businesses Worldwide</Text>
-                        </Box>
+                    <Box width="60%" margin="auto">
+                        <Text fontSize="1.2vw">Suite of Connected Technology Offerings and Connected Mobility Solutions for Businesses Worldwide</Text>
+                    </Box>
 
-                        <Button w="28%" position="-moz-initial" padding="0px 50px 0px 50px" colorScheme='(16,163,16)' size='md' bgColor="#10a310" marginTop="50px">
-                            Request Demo
-                        </Button>
+                    <Button w="28%" position="-moz-initial" padding="0px 50px 0px 50px" colorScheme='(16,163,16)' size='md' bgColor="#10a310" marginTop="50px">
+                        Request Demo
+                    </Button>
                     </Box>
                 </div>
 
@@ -275,7 +275,7 @@ function ZmsPage() {
                                     <FormControl isRequired padding="5px">
                                         <Input
                                             placeholder="Company Name"
-
+                                            
                                             height="60px" />
                                     </FormControl>
                                 </GridItem>
@@ -312,6 +312,7 @@ function ZmsPage() {
                                 </GridItem>
 
                             </Grid>
+
 
                             <Button position="-moz-initial" padding="0px 70px 0px 70px" colorScheme='(16,163,16)' size='md' bgColor="#10a310" marginTop="50px">
                                 Submit

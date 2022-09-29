@@ -25,7 +25,7 @@ const links2 = [
         title: "ZMS"
     },
     {
-        path:"/login",
+        path:"/loginsignup",
         title:"Login/SignUp"
     }
 
@@ -64,7 +64,9 @@ function HomeNavbar() {
             
                 <Box w="240%" height="60px" border="solid red 1px" >
                 <Flex justifyContent="space-around">
-                    <Flex w="75%" alignItems='center' marginTop="10px" border="solid red 1px" justifyContent="space-between" >
+                    <Flex w="75%" alignItems='center' marginTop="10px" 
+                    border="solid red 1px" 
+                    justifyContent="space-between" >
                         <Box >
                             <Img boxSize="100%" src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
                         </Box>

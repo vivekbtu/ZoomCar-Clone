@@ -4,19 +4,19 @@
 
 /* HOME NAVBAR CSS  */
 
-.HNavbar{
-  background-color: black;
+/* .HNavbar{
+  background-color: #fff;
   
-}
+} */
 
 .HNavbar.colorChange{
-  background-color: black;
+  background-color: #000000;
   
 }
-.HNavbarHover:hover{
+/* .HNavbarHover:hover{
 
   color: #fa5d00;
-}
+} */
 
 /* CHANGE NAVBAR COLOR CSS */
 
@@ -29,10 +29,10 @@
   background-color: black;
   
 }
-.NavbarHover:hover{
+/* .NavbarHover:hover{
 
   color: #fa5d00;
-}
+} */
 
 /* SHOW NOT SHOW NAVBAR CSS */
 
