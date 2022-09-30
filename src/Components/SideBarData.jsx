@@ -9,42 +9,30 @@ import { IoPerson } from "react-icons/io5";
 export const SidebarData = [
 {
 	title: "Login or Signup",
-	path: "/loginSignup",
-	icon: <IoPerson />,
-	// iconClosed: <RiIcons.RiArrowDownSFill />,
-	// iconOpened: <RiIcons.RiArrowUpSFill />,
+	path: "/loginsignup",
+	// icon: <IoPerson />,
 
 },
 {
 	title: "Change City",
-	path: "/changecity",
-	// icon: <IoIcons.IoIosPaper />,
-	// iconClosed: <RiIcons.RiArrowDownSFill />,
-	// iconOpened: <RiIcons.RiArrowUpSFill />,
+	path: "/selectcountry",
 
 },
 {
 	title: "Become a Host",
 	path: "/becomeahost",
-	// icon: <FaIcons.FaPhone />,
 },
 {
 	title: "Zoomcar Fleet Vehicles Policies",
-	path: "/events",
-	// icon: <FaIcons.FaEnvelopeOpenText />,
-
-	// iconClosed: <RiIcons.RiArrowDownSFill />,
-	// iconOpened: <RiIcons.RiArrowUpSFill />,
+	path: "/zoomcar-mobility-services",
 
 },
 {
 	title: "Zoomcar Host Vehicles Policies",
-	path: "/sup",
-	// icon: <IoIcons.IoMdHelpCircle />,
+	path: "/zoomcar-mobility-services",
 },
 {
 	title: "Help & Support",
 	path: "/support",
-	// icon: <IoIcons.IoMdHelpCircle />,
 },
 ];

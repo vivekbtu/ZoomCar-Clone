@@ -45,7 +45,7 @@ return (
 	onClick={item.subNav && showSubnav}
     >
 		<div>
-		{item.icon}
+		{/* {item.icon} */}
 		<SidebarLabel>{item.title}</SidebarLabel>
 		</div>
 		<div>

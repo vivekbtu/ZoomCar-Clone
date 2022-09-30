@@ -94,6 +94,10 @@
   width: 100%;
 }
 
+.ZmsImage1{
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
 /* .home,
 .services,
 .reports,
@@ -104,3 +108,28 @@
   margin-left: 260px;
   font-size: 2rem;
 } */
+
+
+.fly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  color: white;
+  background-color: #3061e7;
+  margin-top: 1%;
+  margin-left: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  }
+  .fly input {
+  padding-left: 5px;
+  font-size: 18px;
+  height: 30px;
+  }
+  .fly button {
+  cursor: pointer;
+  width: 50px;
+  }
+  
