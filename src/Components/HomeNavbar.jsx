@@ -62,14 +62,18 @@ function HomeNavbar() {
             {/* <Sidebar/> */}
             <Box className={colorChange ? 'HNavbar colorChange' : 'HNavbar '} width="100%" margin="auto" >
             
-                <Box w="240%" height="60px" border="solid red 1px" >
+                <Box w="240%" height="60px" 
+                // border="solid red 1px" 
+                >
                 <Flex justifyContent="space-around">
                     <Flex w="75%" alignItems='center' marginTop="10px" 
-                    border="solid red 1px" 
+                    // border="solid red 1px" 
                     justifyContent="space-between" >
+                        <NavLink to="/">
                         <Box >
                             <Img boxSize="100%" src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
                         </Box>
+                        </NavLink>
 
                         <Box>
                             {links.map((link) => (
@@ -84,7 +88,9 @@ function HomeNavbar() {
                         </Box>
                     </Flex>
                     <Box w="20%">
-                        <Flex w="100%" alignItems='center' gap={20} marginTop="15px" border="solid red 1px" justifyContent="space-around" >
+                        <Flex w="100%" alignItems='center' gap={20} marginTop="15px" 
+                        // border="solid red 1px" 
+                        justifyContent="space-around" >
                         {links2.map((link) => (
                                     <NavLink key={link.path} to={link.path}>
                                         <Text color="white" className="NavbarHover" fontSize='1.3vw' fontWeight="700">{link.title}</Text>

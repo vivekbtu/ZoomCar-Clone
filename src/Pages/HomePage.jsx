@@ -2,7 +2,7 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { IoSwapHorizontalOutline } from "react-icons/io5";
-import { Box, Button, Flex, Grid, Img, Input, Select, Text } from "@chakra-ui/react";
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Grid, Img, Input, Select, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import Sidebar from "../Components/SideBar";
 
@@ -11,10 +11,12 @@ var size = `100% 450px`
 var height = `450px`
 var btnclr1 = `#10a310`
 var btnclr2 = `gray`
+var Aboutheight = `50px`
 
 function Home() {
 
     const [aeroplane, setAeroplane] = useState(true);
+    const [view, setView] = useState(true);
 
     const handleClick=()=>{
         if(aeroplane == false)
@@ -33,6 +35,18 @@ function Home() {
             height = `550px`
             btnclr1 = "gray"
             btnclr2 = "#10a310"
+        }
+    }
+
+    const AboutHandleClick=()=>{
+        if(view == false)
+        {
+            setView(true)
+            Aboutheight = `50px`
+        }
+        else {
+            setView(false)
+            Aboutheight = `200px`
         }
     }
 
@@ -188,14 +202,63 @@ function Home() {
                 <Box w="100%" 
                 border="solid #f5f5f5 1px" 
                 bgColor="#f5f5f5">
-                    <Box w="100%" height="50px" border="solid red 1px" bgColor="#fff" marginTop="20px" >
+                    <Box w="100%" 
+                    // border="solid red 1px" 
+                    bgColor="#fff" marginTop="20px" 
+                    style={{
+                        height:`${Aboutheight}`
+                    }}
+                    >
                         {/* <Select w="10%" textAlign="center" margin="auto" padding="10px" variant="unstyled" placeholder='Select option'>
                             <option value='option1'>Option 1</option>
                             <option value='option2'>Option 2</option>
                             <option value='option3'>Option 3</option>
                         </Select> */}
 
-                        
+                        <Accordion allowToggle>
+                            <AccordionItem>
+                                <h2>
+                                <AccordionButton w="10%" margin="auto" 
+                                // border="solid red 1px" 
+                                gap={1}>
+                                    <Box>
+                                        About Us
+                                    </Box>
+                                    <Button variant="unstyled" 
+                                    // colorScheme='red'
+                                    onClick={AboutHandleClick}>
+                                    <AccordionIcon  />
+                                    </Button>
+                                </AccordionButton>
+                                </h2>
+                                { view ? 
+                                ""
+                                :
+                                <AccordionPanel pb={4} fontSize="0.8vw">
+                                    <Box >
+                                    <a href="https://www.zoomcar.com/about">
+                                        <option value='option1'>Zoomcar Team </option>
+                                    </a>
+                                    </Box>
+                                    <Box marginTop="5px">
+                                    <a href="https://www.zoomcar.com/in/host/en?utm_sub_source=url_redirect">
+                                        <option value='option2'>Zoomcar Subscription</option>
+                                    </a>    
+                                    </Box>
+                                    <Box marginTop="5px">
+                                    <a href="https://www.zoomcar.com/blog/">
+                                        <option value='option3'>Zoomcar Blog</option>
+                                    </a>
+                                    </Box>
+                                    <Box marginTop="5px">
+                                    <a href="https://www.zoomcar.com/careers">
+                                        <option value='option4'>Careers @ Zoomcar</option>
+                                    </a>
+                                    </Box>
+                                    
+                                </AccordionPanel>}
+                            </AccordionItem>
+                        </Accordion>
                     </Box>
 
                     {/* INSIDE ABOUT PAGE  */}

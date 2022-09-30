@@ -103,9 +103,10 @@ function LoginForm(){
 
                 <Box  marginTop="500px" >
                 <Button w="90%" height="60px" colorScheme='teal' size='lg' bgColor="#10a310"
+                disabled={length === false}
                 onClick={ handleClick }
                 >
-                    Button
+                    CONTINUE
                 </Button>
                 </Box>
             </Box>
