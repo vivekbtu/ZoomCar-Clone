@@ -60,7 +60,7 @@ function HomeNavbar() {
         <nav>
             {/* <Box className={show ? 'nav' : 'nav__show'} > */}
             {/* <Sidebar/> */}
-            <Box className={colorChange ? 'HNavbar colorChange' : 'HNavbar '} width="100%" margin="auto" >
+            <Box className={colorChange ? 'HNavbar' : 'HNavbar '} width="100%" margin="auto" >
             
                 <Box w="240%" height="60px" 
                 // border="solid red 1px" 

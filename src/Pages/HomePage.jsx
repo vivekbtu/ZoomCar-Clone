@@ -5,6 +5,7 @@ import { IoSwapHorizontalOutline } from "react-icons/io5";
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Grid, Img, Input, Select, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import Sidebar from "../Components/SideBar";
+import { NavLink } from "react-router-dom";
 
 var hcbgImage = `https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080,h_675/https://digitaldealer.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-07-at-10.13.29-AM.png`;
 var size = `100% 450px`
@@ -19,7 +20,7 @@ function Home() {
     const [view, setView] = useState(true);
 
     const handleClick=()=>{
-        if(aeroplane == false)
+        if(aeroplane === false)
         {
             setAeroplane(true)
             hcbgImage = `https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080,h_675/https://digitaldealer.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-07-at-10.13.29-AM.png`
@@ -39,7 +40,7 @@ function Home() {
     }
 
     const AboutHandleClick=()=>{
-        if(view == false)
+        if(view === false)
         {
             setView(true)
             Aboutheight = `50px`
@@ -101,20 +102,23 @@ function Home() {
                             </Flex>
                         
                         </Box>
-
-                        <Box width="40%" margin="auto" marginTop="10px">
-                            { aeroplane ? <Input
-                            bgColor="#ffffff"
-                            height="50px"
-                            placeholder="Pick Up City, Airport, Address or Hotel"
-                            /> : <Input 
-                                bgColor="#ffffff"
-                                height="50px"
-                                placeholder="
-                                Mumbai
-                                T-2, Chhatrapati Shivaji Maharaj International Ai"
-                            />}
-                        </Box>
+                            <NavLink to="/location">
+                                <Box width="40%" margin="auto" marginTop="10px" >
+                                    { aeroplane ? <Input
+                                    bgColor="#ffffff"
+                                    cursor="pointer"
+                                    height="50px"
+                                    placeholder="Pick Up City, Airport, Address or Hotel"
+                                    /> : <Input 
+                                        bgColor="#ffffff"
+                                        height="50px"
+                                        cursor="pointer"
+                                        placeholder="
+                                        Mumbai
+                                        T-2, Chhatrapati Shivaji Maharaj International Ai"
+                                    />}
+                                </Box>
+                            </NavLink>
 
                         <Box width="40%" margin="auto" marginTop="10px">
                             { aeroplane ? "" : <Input 

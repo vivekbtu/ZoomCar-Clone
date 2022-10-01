@@ -1,8 +1,9 @@
 
 import { useEffect, useState } from "react";
-import ReactMapGL, { Marker, FlyToInterpolator }
-	from "react-map-gl";
+// import ReactMapGL, { Marker, FlyToInterpolator }
+	// from "react-map-gl";
 import { ImLocation } from "react-icons/im";
+import { Marker } from "react-map-gl";
 import "./App.css";
 import Fly from "./Fly";
 
@@ -32,7 +33,7 @@ useEffect(() => {
 	longitude: lon,
 	zoom: 12,
 	transitionInterpolator:
-		new FlyToInterpolator({ speed: 1.0 }),
+		new FlyToInterpolator ({ speed: 1.0 }),
 	transitionDuration: "auto",
 	width: "100%",
 	height: "100vh",
@@ -46,7 +47,7 @@ return (
 	onViewportChange={(viewport) => setViewport(viewport)}
 	>
 	<Marker latitude={lat} longitude={lon}>
-		<ImLocation size="30px" />
+		<ImLocation size="300px" />
 	</Marker>
 	<Fly setLat={setLat} setLon={setLon} />
 	</ReactMapGL>
