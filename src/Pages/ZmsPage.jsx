@@ -1,4 +1,4 @@
-import { Box, Button, Flex, FormControl, Grid, GridItem, HStack, Icon, Img, Input, SimpleGrid, Text, Textarea } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, Grid, GridItem, Img, Input, SimpleGrid, Text, Textarea } from "@chakra-ui/react";
 import { useState } from "react";
 import Navbar from "../Components/ZmsNavbar";
 
@@ -15,7 +15,7 @@ function ZmsPage() {
     const [aeroplane, setAeroplane] = useState(true);
 
     const handleClick=()=>{
-        if(aeroplane == false)
+        if(aeroplane === false)
         {
             setAeroplane(true)
             // hcbgImage = `https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080,h_675/https://digitaldealer.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-07-at-10.13.29-AM.png`

@@ -4,20 +4,11 @@
 
 /* HOME NAVBAR CSS  */
 
-/* .HNavbar{
-  background-color: #fff;
-  
-} */
 
 .HNavbar.colorChange{
   background-color: #000000;
   
 }
-/* .HNavbarHover:hover{
-
-  color: #fa5d00;
-} */
-
 /* CHANGE NAVBAR COLOR CSS */
 
 .Navbar{
@@ -29,10 +20,7 @@
   background-color: black;
   
 }
-/* .NavbarHover:hover{
 
-  color: #fa5d00;
-} */
 
 /* SHOW NOT SHOW NAVBAR CSS */
 
@@ -98,16 +86,6 @@
   filter: blur(3px);
   -webkit-filter: blur(3px);
 }
-/* .home,
-.services,
-.reports,
-.contact,
-.events,
-.support {
-  display: flex;
-  margin-left: 260px;
-  font-size: 2rem;
-} */
 
 
 .fly {
