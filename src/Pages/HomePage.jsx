@@ -2,7 +2,7 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { IoSwapHorizontalOutline } from "react-icons/io5";
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Grid, Img, Input, Select, Text } from "@chakra-ui/react";
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Flex, Grid, Img, Input, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import Sidebar from "../Components/SideBar";
 import { NavLink } from "react-router-dom";

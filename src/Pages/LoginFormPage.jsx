@@ -1,8 +1,8 @@
 // import { ArrowBackIcon } from "@chakra-ui/icons";
 
 import { Box, Button, Flex, Img, Input, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import { Navigate, NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import {  NavLink, useNavigate } from "react-router-dom";
 import { IoArrowBackSharp } from "react-icons/io5";
 
 
