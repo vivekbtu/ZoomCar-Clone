@@ -8,7 +8,6 @@ import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import Sidebar from "./SideBar";
 
 
 const links = [
