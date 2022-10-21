@@ -1,3 +1,18 @@
+
+# Deploy link (https://isnt-bittubieber19-gmail-com-awesome-20dbc.netlify.app)
+
+---
+# Home Page
+![Home Pages](https://drive.google.com/uc?export=view&id=1XPkMw7B4rjxLr1nQMM8KczN_NBtw0TlR)
+
+---
+# Select Location Page
+![Location Pages](https://drive.google.com/uc?export=view&id=1HrzyAfoyW2BxrdwbSb72pVXDnNPsE8fv)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
