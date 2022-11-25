@@ -3,7 +3,8 @@
 
 ---
 # Home Page
-![Home Pages](https://drive.google.com/uc?export=view&id=1XPkMw7B4rjxLr1nQMM8KczN_NBtw0TlR)
+![Home Pages](https://github.com/vivekbtu/ZoomCar-Clone/blob/fw19_1253_Day_2/ZoomCar%20HomePage.png?raw=true)
+
 
 ---
 # Select Location Page
