@@ -3,7 +3,7 @@
 
 ---
 # Home Page
-![Home Pages](https://github.com/vivekbtu/ZoomCar-Clone/blob/fw19_1253_Day_2/ZoomCar%20HomePage.png?raw=true)
+![ZoomCar HomePage](https://user-images.githubusercontent.com/101381281/204875708-2a1d43c1-ceba-495e-943f-732c28146921.png)
 
 
 ---
