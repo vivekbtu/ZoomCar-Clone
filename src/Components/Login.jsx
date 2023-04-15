@@ -1,4 +1,4 @@
-import { Button, FormControl, Input, Text } from "@chakra-ui/react";
+import { Button, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import { useReducer } from "react";

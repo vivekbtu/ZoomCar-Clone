@@ -3,14 +3,10 @@ import {
   Button,
   Drawer,
   DrawerBody,
-  DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   Flex,
   Heading,
-  Input,
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";

@@ -4,6 +4,7 @@ import { Navigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContextProvider";
 
 export default function PrivateRoute({ children }) {
+  
   const { isAuth } = useContext(AuthContext);
   const LoggedInStatusLS = localStorage.getItem("isLoggedIn");
 
