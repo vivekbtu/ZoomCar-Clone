@@ -1,0 +1,24 @@
+.logo a {
+    background-image: url(https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 40px;
+    width: 182px;
+    display: block;
+}
+.header {
+    display: flex;
+  }
+.header {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.leftLink{
+    margin:auto 10px;
+    padding: 20px;
+}
