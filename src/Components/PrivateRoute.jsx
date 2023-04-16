@@ -8,7 +8,7 @@ export default function PrivateRoute({ children }) {
   const LoggedInStatusLS = localStorage.getItem("isLoggedIn");
 
   if (!isAuth || !LoggedInStatusLS) {
-    return <Navigate to="/search" />;
+    return <Navigate to="/car" />;
   }
 
   return children;

@@ -47,7 +47,7 @@ export default function Login() {
   }, [state]);
 
   if (isAuth && LoggedInStatusLS) {
-    return <Navigate to="/search" />;
+    return <Navigate to="/car" />;
   }
 
   return (

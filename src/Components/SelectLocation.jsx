@@ -89,14 +89,14 @@ export default function SelectLocation({ openModal, setModalStatus }) {
               </Flex>
               <br />
               <Box w="90%" margin="auto" px="10" py="7" bg="#fbfbfb">
-                <Flex w="100%" justifyContent="space-evenly" gap="5">
-                  <Flex flexDirection="column" w="50%">
-                    <Text px="7" py="2" mb="2" bg="#f5f5f5">
+                <Flex display={{"base": "grid", "md":"flex"}} w="100%" justifyContent="space-evenly"  gap="5">
+                  <Flex flexDirection="column" w={{"base":"100%", "md": "50%"}}>
+                    <Text px="7" py="2" mb="2" bg="#f5f5f5" fontSize={{"sm":"13px","md":"15px","lg":"15px"}}>
                       RECENTLY SEARCHED LOCATIONS
                     </Text>
                     <Box
                       fontWeight="normal"
-                      fontSize="lg"
+                      fontSize={{"sm":"15px","md":"18px","lg":"18px"}}
                       _hover="none"
                       bg="#fbfbfb"
                       display="flex"
@@ -113,13 +113,13 @@ export default function SelectLocation({ openModal, setModalStatus }) {
                       </Text>
                     </Box>
                   </Flex>
-                  <Flex flexDirection="column" w="50%">
-                    <Text px="7" py="2" mb="2" bg="#f5f5f5">
+                  <Flex flexDirection="column" w={{"base":"100%", "md": "50%"}}>
+                    <Text px="7" py="2" mb="2" bg="#f5f5f5" fontSize={{"sm":"13px","md":"15px","lg":"15px"}}>
                       SUGGESTED PICKUP LOCATIONS
                     </Text>
                     <Box
                       fontWeight="normal"
-                      fontSize="lg"
+                      fontSize={{"sm":"15px","md":"18px","lg":"18px"}}
                       _hover="none"
                       bg="#fbfbfb"
                       display="flex"

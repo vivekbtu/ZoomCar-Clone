@@ -4,3 +4,22 @@
     align-items: center;
     flex-direction: column;
 }
+
+
+@media screen and (max-width: 479px){
+
+    .flex {
+        width: 80%;
+        margin: auto;
+        padding-inline-start: 10;
+        padding-inline-end: 10;
+        font-size: 11px;
+        /* padding-top: 5;
+        padding-bottom: 5; */
+    }
+
+    .flexBtn{
+        font-size: 12px;
+    }
+    
+}
