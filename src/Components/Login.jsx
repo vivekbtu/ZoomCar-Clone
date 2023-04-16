@@ -1,4 +1,4 @@
-import { Button, Input, Text } from "@chakra-ui/react";
+import { Button, FormControl, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import { useReducer } from "react";
@@ -47,7 +47,7 @@ export default function Login() {
   }, [state]);
 
   if (isAuth && LoggedInStatusLS) {
-    return <Navigate to="/search" />;
+    return <Navigate to="/car" />;
   }
 
   return (

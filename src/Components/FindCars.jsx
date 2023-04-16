@@ -25,9 +25,9 @@ export default function FindCars({ changeBackground }) {
             fontWeight="light"
             bg="#F5F5F5"
             className={findCarStyles.flex}
-            px="20"
+            px={{"sm":"10","md":"20","lg":"20"}}
             py="5"
-            fontSize="15px"
+            fontSize={{"sm":"13px","md":"15px","lg":"15px"}}
             borderRightRadius="0rem"
             border={isbtnclicked ? "1px solid lightgreen" : null}
             onClick={() => {
@@ -44,10 +44,10 @@ export default function FindCars({ changeBackground }) {
             fontWeight="light"
             bg="#F5F5F5"
             className={findCarStyles.flex}
-            px="20"
+            px={{"sm":"10","md":"20","lg":"20"}}
             py="5"
             mb="3"
-            fontSize="15px"
+            fontSize={{"sm":"13px","md":"15px","lg":"15px"}}
             borderLeftRadius="0rem"
             border={!isbtnclicked ? "1px solid lightgreen" : null}
             onClick={() => {
@@ -63,9 +63,10 @@ export default function FindCars({ changeBackground }) {
         </Flex>
         <Flex
           w="100"
+          className={findCarStyles.flexBtn}
           bg="#F5F5F5"
           p="3"
-          fontSize="15px"
+          fontSize={{"sm":"13px","md":"15px","lg":"15px"}}
           alignItems="center"
           gap="2"
           mb="3"
@@ -100,7 +101,7 @@ export default function FindCars({ changeBackground }) {
             if (location === "") {
               alert("select location first");
             } else {
-              navigate("/search");
+              navigate("/car");
             }
           }}
         >

@@ -1,10 +1,10 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
-import Box1Styles from "./Box1.module.css";
+import Box1Styles from "./HomePageBox.module.css";
 import FindCars from "./FindCars";
 
-export default function Box1() {
+export default function HomePageBox() {
   const [btn1, setBtn1or2] = useState(1);
   const changeBackground = (val) => {
     setBtn1or2(val);

@@ -2,13 +2,13 @@
     background-image: url(../Images/IMG_20220404_231707.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     min-height: 500px;
 }
 .background2{
     background-image: url(../Images/banner_airport.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     min-height: 500px;
 }

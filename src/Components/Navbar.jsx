@@ -3,10 +3,15 @@ import {
   Button,
   Drawer,
   DrawerBody,
+  DrawerCloseButton,
   DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
   DrawerOverlay,
   Flex,
   Heading,
+  Img,
+  Input,
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
@@ -14,7 +19,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { GrLocation } from "react-icons/gr";
 import { FaUserAlt } from "react-icons/fa";
 import { BsTelephone, BsLayoutTextSidebar } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import NavbarStyles from "./Navbar.module.css";
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContextProvider";
@@ -33,17 +38,29 @@ export default function Navbar() {
         flexWrap="wrap"
         alignItems="center"
         className={NavbarStyles.header}
+      // border="solid 1px red"
       >
-        <Flex alignItems="center" gap="5">
+        <Flex className={NavbarStyles.navHead} alignItems="center"
+          // border="solid 1px red"
+          gap="5">
           <button ref={btnRef} onClick={onOpen}>
             <AiOutlineMenu />
           </button>
-          <Heading size="md" className={NavbarStyles.logo}>
+          {/* <Heading size="md" className={NavbarStyles.logo}>
             <Link to="/">ZOOMCAR</Link>
-          </Heading>
+          </Heading>  */}
+
+          <NavLink to="/">
+            <Box>
+              <Img className={NavbarStyles.logo} boxSize={{ "sm": "75%", "md": "85%", "lg": "100%" }} src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
+            </Box>
+          </NavLink>
+
         </Flex>
-        <Flex alignItems="center" gap="10">
-          <a href="https://www.zoomcar.com/in/host/en?auth_required=true&utm_sub_source=dweb_ingress&platform=web">
+        <Flex className={NavbarStyles.navHead} alignItems="center"
+          // border="solid 1px red"
+          gap="10">
+          {/* <a href="https://www.zoomcar.com/in/host/en?auth_required=true&utm_sub_source=dweb_ingress&platform=web">
             <Flex py="2" px="4" bg="white" color="black" borderRadius="1.5rem">
               <img
                 src="https://www.zoomcar.com/build/e222e7ff96ffdd76290118718d52d71f.svg"
@@ -51,7 +68,8 @@ export default function Navbar() {
               />
               Become a Host
             </Flex>
-          </a>
+          </a> */}
+
           <a href="https://www.zoomcar.com/zoomcar-mobility-services">
             <h1>ZMS</h1>
           </a>
@@ -107,7 +125,7 @@ export default function Navbar() {
                 className={NavbarStyles.leftLink}
                 alignItems="center"
                 gap="4"
-                onClick={()=>{
+                onClick={() => {
                   onClose();
                 }}
               >
@@ -115,7 +133,7 @@ export default function Navbar() {
                 Change City
               </Flex>
             </Link>
-            <a href="https://www.zoomcar.com/in/host/en?auth_required=true&utm_sub_source=dweb_hamb&platform=web">
+            <a href="">
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -128,7 +146,7 @@ export default function Navbar() {
                 Become a Host
               </Flex>
             </a>
-            <a href="https://www.zoomcar.com/in/bangalore/policy">
+            <a href="">
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -138,7 +156,7 @@ export default function Navbar() {
                 Zoomcar Fleet Vehicles Policies
               </Flex>
             </a>
-            <a href="https://www.zoomcar.com/in/bangalore/host-policy">
+            <a href="">
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -148,7 +166,7 @@ export default function Navbar() {
                 Zoomcar Host Vehicles Policies
               </Flex>
             </a>
-            <a href="https://www.zoomcar.com/faq">
+            <a href="">
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"

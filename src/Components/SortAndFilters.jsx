@@ -8,6 +8,10 @@ import {
   InputGroup,
   InputLeftElement,
   InputRightElement,
+  Slider,
+  SliderFilledTrack,
+  SliderThumb,
+  SliderTrack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";

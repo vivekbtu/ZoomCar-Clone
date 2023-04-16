@@ -1,13 +1,4 @@
 
-.logo a {
-    background-image: url(https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png);
-    background-repeat: no-repeat;
-    font-size: 0;
-    height: 40px;
-    width: 182px;
-    display: block;
-}
-
 .header {
     display: flex;
   }
@@ -23,4 +14,17 @@
 .leftLink{
     margin:auto 10px;
     padding: 20px;
+}
+
+@media screen and (max-width: 479px){
+
+    .logo {
+        width: 65%;
+    }
+    .navHead{
+        width: 50%;
+    }
+    .navHead {
+        font-size: 12px;
+    }
 }
