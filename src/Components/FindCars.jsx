@@ -1,16 +1,17 @@
-import { background, Box, Button, color, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsArrowLeftRight } from "react-icons/bs";
 import { TbPlane } from "react-icons/tb";
 import { GoPrimitiveDot } from "react-icons/go";
 import findCarStyles from "./FindCars.module.css";
 import { useState } from "react";
-import SelectLocation from "./SelectLocation";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContextProvider";
+import SelectLocation from "../Pages/SelectLocation";
 
 export default function FindCars({ changeBackground }) {
+  
   const [isbtnclicked, setBtn] = useState(true);
   const [openModal, setModalStatus] = useState(false);
 

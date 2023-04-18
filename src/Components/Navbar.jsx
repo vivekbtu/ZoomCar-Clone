@@ -3,15 +3,10 @@ import {
   Button,
   Drawer,
   DrawerBody,
-  DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   Flex,
-  Heading,
   Img,
-  Input,
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
@@ -70,12 +65,12 @@ export default function Navbar() {
             </Flex>
           </a> */}
 
-          <a href="https://www.zoomcar.com/zoomcar-mobility-services">
+          <Link to="">
             <h1>ZMS</h1>
-          </a>
+          </Link>
           {/* if logged in then show bookings page */}
           {isAuth ? (
-            <Link to="/bookings">
+            <Link to="/car-bookings">
               <h1>Bookings</h1>
             </Link>
           ) : null}

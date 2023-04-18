@@ -1,9 +1,9 @@
-import { Button, FormControl, Input, Text } from "@chakra-ui/react";
+import { Button, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import { useReducer } from "react";
 import { useContext } from "react";
-import { Form, Link, Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContextProvider";
 
 const initialState = {
@@ -83,15 +83,16 @@ export default function Login() {
         <Button
           size="sm"
           mt="2"
+          backgroundColor="teal"
           _hover={{ background: "blue.500", color: "white" }}
           type="submit"
         >
-          Login
+          Submit
         </Button>
       </form>
       <small>
         Not Registered?,{" "}
-        <Link to="/register">
+        <Link to="/signup">
           <u style={{ color: "red" }}>Register Here</u>
         </Link>
       </small>

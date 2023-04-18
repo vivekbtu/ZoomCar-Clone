@@ -1,7 +1,5 @@
 
 
-
-
 import { Box, Button, Flex, Img } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
@@ -76,7 +74,7 @@ function ZmsNavbar() {
             justifyContent="space-around" >
               <NavLink to="/" >
                 <Box marginTop="10px">
-                  <Img boxSize="15%" src="https://www.zoomcar.com/assets/component-images/zms-logo-white.2af37707ebe1f0942fd6285bb0fdf3d9.png" />
+                  <Img boxSize="65%" src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" />
                 </Box>
               </NavLink>
 
