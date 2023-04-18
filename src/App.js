@@ -1,19 +1,13 @@
 
 import './App.css';
-// import { ChakraProvider } from '@chakra-ui/react';
-// import ZmsPage from './Components/ZmsPage';
-import AllRoutes from './Routes/AllRoutes';
 import { BrowserRouter } from 'react-router-dom';
-import LocatinPage from './Pages/LocationPage';
+import AllRoutes from './Routes/AllRoutes';
 function App() {
   return (
     <div className="App">
-     {/* <ChakraProvider> */}
-     <BrowserRouter>
-      <AllRoutes />
-      {/* <LocatinPage /> */}
+      <BrowserRouter>
+        <AllRoutes />
       </BrowserRouter>
-     {/* </ChakraProvider> */}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Button, FormControl, Input, Text } from "@chakra-ui/react";
+import { Button, Input, Text } from "@chakra-ui/react";
 import React, { useContext, useEffect, useReducer } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContextProvider";
@@ -78,10 +78,11 @@ export default function Register() {
         <Button
           size="sm"
           mt="2"
+          backgroundColor="teal"
           _hover={{ background: "red.500", color: "white" }}
           type="submit"
         >
-          SignUp
+          Submit
         </Button>
       </form>
       <small>
