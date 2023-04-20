@@ -3,7 +3,7 @@
 # Deploy Link :- https://vivek-zoomcar.netlify.app
 ---
 # Home Page
-![Screenshot 2023-04-20 150454](https://user-images.githubusercontent.com/101381281/233326315-0c949bd9-8b23-480f-a828-91c9c160a37f.png))
+![Screenshot 2023-04-20 150454](https://user-images.githubusercontent.com/101381281/233326315-0c949bd9-8b23-480f-a828-91c9c160a37f.png)
 
 
 ---
