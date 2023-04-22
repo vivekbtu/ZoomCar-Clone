@@ -51,7 +51,7 @@ export default function Login() {
   }
 
   return (
-    <div>
+    <>
       <Text fontSize="lg" fontWeight="bold" color="blue.500" mb="3">
         Login
       </Text>
@@ -63,22 +63,24 @@ export default function Login() {
         }}
       >
         <Input
-          py="1"
+          py="5"
           size="sm"
           placeholder="Email Address"
           type="email"
           value={state.email}
           onChange={(e) => dispatch(emailAction(e.target.value))}
-          borderRadius="0.25rem"
+          borderRadius="0.5rem"
         />
         <Input
-          py="1"
+          py="5"
           size="sm"
           placeholder="Password"
           type="password"
           value={state.password}
           onChange={(e) => dispatch(passwordAction(e.target.value))}
-          borderRadius="0.25rem"
+          borderRadius="0.5rem"
+          marginBottom="3%"
+          marginTop="3%"
         />
         <Button
           size="sm"
@@ -96,6 +98,6 @@ export default function Login() {
           <u style={{ color: "red" }}>Register Here</u>
         </Link>
       </small>
-    </div>
+    </>
   );
 }
