@@ -22,7 +22,7 @@ const addToBooking = async (carId) => {
 
   await axios
     .post(
-      "https://zoomcar-api-two.vercel.app/booking",
+      "https://json-server-p1rm.onrender.com/bookings",
       {
         car_id: carId,
       },
@@ -34,7 +34,9 @@ const addToBooking = async (carId) => {
       }
     )
     .then((res) => {
+      // console.log(res.data.id);
       alert("car booking successful");
+      localStorage.setItem("id", res.data.id)
     })
     .catch((err) => {
       console.log(err);
