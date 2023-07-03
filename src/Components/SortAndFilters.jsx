@@ -88,7 +88,7 @@ export default function SortAndFilters({
     }, 1000);
 
     return () => clearTimeout(showSearchedName);
-  }, [searchedName]);
+  }, [displaySearchedCar]);
 
   // for update using car age slider
   useEffect(() => {
