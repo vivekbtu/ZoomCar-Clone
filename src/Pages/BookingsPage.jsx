@@ -29,6 +29,8 @@ export default function BookingsPage() {
     getBookingsData().then((res) => setData(res.data));
   };
 
+  // let id = localStorage.getItem("id")
+  // console.log(id);
 
   const cancelBooking = async (id) => {
     return await axios
@@ -82,16 +84,16 @@ export default function BookingsPage() {
             ? carData.map((car) => (
               <CarCard
                 key={car.id}
-                image={car.car_id.image}
-                name={car.car_id.name}
-                transmission={car.car_id.transmission}
-                fuel={car.car_id.fuel}
-                seats={car.car_id.seats}
-                ratings={car.car_id.ratings}
-                kms={car.car_id.kms}
-                address={car.car_id.address}
-                discount_price={car.car_id.discount_price}
-                original_price={car.car_id.original_price}
+                image={car.car_id.image ? car.car_id.image : 'dummy-image-url'}
+                name={car.car_id.name ? car.car_id.name : "Renault Duster"}
+                transmission={car.car_id.transmission ? car.car_id.transmission : "Manual"}
+                fuel={car.car_id.fuel ? car.car_id.fuel : "Diesel"}
+                seats={car.car_id.seats ? car.car_id.seats : "5 Seats"}
+                ratings={car.car_id.ratings ? car.car_id.ratings : "5.00 (8)"}
+                kms={car.car_id.kms ? car.car_id.kms : "60k kms driven"}
+                address={car.car_id.address ? car.car_id.address : "7.5 km T Block, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560041, India"}
+                discount_price={car.car_id.discount_price ? car.car_id.discount_price : "3973"}
+                original_price={car.car_id.original_price ? car.car_id.original_price : "4775"}
                 isBooked={true}
                 delete_id={car.id}
                 cancelBooking={cancelBooking}
@@ -100,16 +102,16 @@ export default function BookingsPage() {
             : carData.map((car) => (
               <SmallScreenCarCard
                 key={car.id}
-                image={car.car_id.image}
-                name={car.car_id.name}
-                transmission={car.car_id.transmission}
-                fuel={car.car_id.fuel}
-                seats={car.car_id.seats}
-                ratings={car.car_id.ratings}
-                kms={car.car_id.kms}
-                address={car.car_id.address}
-                discount_price={car.car_id.discount_price}
-                original_price={car.car_id.original_price}
+                image={car.car_id.image ? car.car_id.image : 'dummy-image-url'}
+                name={car.car_id.name ? car.car_id.name : "Renault Duster"}
+                transmission={car.car_id.transmission ? car.car_id.transmission : "Manual"}
+                fuel={car.car_id.fuel ? car.car_id.fuel : "Diesel"}
+                seats={car.car_id.seats ? car.car_id.seats : "5 Seats"}
+                ratings={car.car_id.ratings ? car.car_id.ratings : "5.00 (8)"}
+                kms={car.car_id.kms ? car.car_id.kms : "60k kms driven"}
+                address={car.car_id.address ? car.car_id.address : "7.5 km T Block, 4th T Block East, 4th Block, Jayanagar, Bengaluru, Karnataka 560041, India"}
+                discount_price={car.car_id.discount_price ? car.car_id.discount_price : "3973"}
+                original_price={car.car_id.original_price ? car.car_id.original_price : "4775"}
                 isBooked={true}
                 delete_id={car.id}
                 cancelBooking={cancelBooking}
@@ -121,3 +123,4 @@ export default function BookingsPage() {
     </>
   );
 }
+

@@ -33,7 +33,7 @@ export default function Navbar() {
         flexWrap="wrap"
         alignItems="center"
         className={NavbarStyles.header}
-      // border="solid 1px red"
+        // border="solid 1px red"
       >
         <Flex className={NavbarStyles.navHead} alignItems="center"
           // border="solid 1px red"
@@ -54,7 +54,8 @@ export default function Navbar() {
         </Flex>
         <Flex className={NavbarStyles.navHead} alignItems="center"
           // border="solid 1px red"
-          gap="10">
+          // gap="5"
+          >
           {/* <a href="https://www.zoomcar.com/in/host/en?auth_required=true&utm_sub_source=dweb_ingress&platform=web">
             <Flex py="2" px="4" bg="white" color="black" borderRadius="1.5rem">
               <img
@@ -65,9 +66,9 @@ export default function Navbar() {
             </Flex>
           </a> */}
 
-          <Link to="">
+          <p>
             <h1>ZMS</h1>
-          </Link>
+          </p>
           {/* if logged in then show bookings page */}
           {isAuth ? (
             <Link to="/car-bookings">
@@ -80,11 +81,13 @@ export default function Navbar() {
             </Link>
           ) : (
             <Button
-              size="md"
+            className={NavbarStyles.logout}
+              size={{"sm":"sm","md":"md","lg":"md"}}
               bg="red"
               color="#ffffff"
               borderRadius="1.5rem"
               _hover="none"
+              // fontSize={{"sm":"7px","md":"15px","lg":"15px"}}
               onClick={() => {
                 logOutUser();
                 navigate("/");
@@ -128,7 +131,7 @@ export default function Navbar() {
                 Change City
               </Flex>
             </Link>
-            <a href="">
+            <p >
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -140,8 +143,8 @@ export default function Navbar() {
                 />
                 Become a Host
               </Flex>
-            </a>
-            <a href="">
+            </p>
+            <p >
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -150,8 +153,8 @@ export default function Navbar() {
                 <BsLayoutTextSidebar />
                 Zoomcar Fleet Vehicles Policies
               </Flex>
-            </a>
-            <a href="">
+            </p>
+            <p>
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -160,8 +163,8 @@ export default function Navbar() {
                 <BsLayoutTextSidebar />
                 Zoomcar Host Vehicles Policies
               </Flex>
-            </a>
-            <a href="">
+            </p>
+            <p>
               <Flex
                 className={NavbarStyles.leftLink}
                 alignItems="center"
@@ -170,7 +173,7 @@ export default function Navbar() {
                 <BsTelephone />
                 Help & Support
               </Flex>
-            </a>
+            </p>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

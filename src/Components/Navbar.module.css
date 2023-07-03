@@ -1,7 +1,7 @@
-
 .header {
     display: flex;
-  }
+}
+
 .header {
     width: 100%;
     background-color: #000;
@@ -11,20 +11,37 @@
     align-items: center;
     display: none;
 }
-.leftLink{
-    margin:auto 10px;
+
+.leftLink {
+    margin: auto 10px;
     padding: 20px;
 }
 
-@media screen and (max-width: 479px){
+.navHead {
+    gap: 5rem;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 559px) {
 
     .logo {
         width: 65%;
     }
-    .navHead{
+
+    .navHead {
         width: 50%;
+        gap: 1.2rem;
     }
+
     .navHead {
         font-size: 12px;
+    }
+
+    .logout {
+        font-size: 8px;
+        padding: 3px;
     }
 }
