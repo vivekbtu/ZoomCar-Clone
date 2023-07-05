@@ -12,7 +12,7 @@ import SmallScreenCarCard from "../Components/SmallScreenCarCard";
 const getBookingsData = async () => {
   // let id = localStorage.getItem("id")
   // console.log(id);
-  return await axios.get(`https://json-server-p1rm.onrender.com/bookings/`);
+  return await axios.get(`https://mock-data-3aee.onrender.com/bookings/`);
 };
 
 export default function BookingsPage() {
@@ -34,7 +34,7 @@ export default function BookingsPage() {
 
   const cancelBooking = async (id) => {
     return await axios
-      .delete(`https://json-server-p1rm.onrender.com/bookings/${id}`)
+      .delete(`https://mock-data-3aee.onrender.com/bookings/${id}`)
       .then(() => {
         alert("Booking Cancellation Successful");
         fetchAndUpdateCarData();
