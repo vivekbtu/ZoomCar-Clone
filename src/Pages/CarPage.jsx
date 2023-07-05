@@ -22,7 +22,7 @@ const addToBooking = async (carId) => {
 
   await axios
     .post(
-      "https://json-server-p1rm.onrender.com/bookings",
+      "https://mock-data-3aee.onrender.com/bookings",
       {
         car_id: carId,
       },
